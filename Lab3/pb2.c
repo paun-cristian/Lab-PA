@@ -43,7 +43,7 @@ void init_matrix() {
 		for (int j = 0; j < LMAT; j++)
 			medium += matrix[i][j];
 
-		printf("Media pe linia %d dupa scadere: %d\n", i, medium);
+		printf("Media pe linia %d dupa scadere: %d\n", i, medium / LMAT);
 	}
 	free_matrix(matrix);
 }
